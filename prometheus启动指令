@@ -1,0 +1,1 @@
+./prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.retention.time=180d
