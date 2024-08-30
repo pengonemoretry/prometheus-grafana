@@ -1,0 +1,43 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "taiyue"
+    static_configs:
+    - targets: ["localhost:8000"]
+
+  - job_name: "Guohui_50"
+    static_configs:
+    - targets: ["localhost:8001"]
+
+  - job_name: "shenzhen"
+    static_configs:
+    - targets: ["localhost:8002"]
+
+  - job_name: "shanghai"
+    static_configs:
+    - targets: ["localhost:8003"]
+
+  - job_name: "nuanshan"
+    static_configs:
+    - targets: ["localhost:8004"]
+
+  - job_name: "guangzhou"
+    static_configs:
+    - targets: ["localhost:8005"]
+
+  - job_name: "nuanshan_vpn"
+    static_configs:
+    - targets: ["localhost:8006"]
+
+  - job_name: "pingxiang"
+    static_configs:
+    - targets: ["localhost:8007"]
+
+  - job_name: "Guohui_33"
+    static_configs:
+    - targets: ["localhost:8008"]
+
+  - job_name: "Changsha"
+    static_configs:
+    - targets: ["localhost:8009"]
