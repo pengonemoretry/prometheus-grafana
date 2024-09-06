@@ -1,0 +1,152 @@
+version: "2"
+
+services:
+  ikuai2-taiyue:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-taiyue
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=61.50.125.98
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9000
+    ports:
+      - "9000:9000"
+
+  ikuai2-guohui_50:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-guohui_50
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=218.76.0.124
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9001
+    ports:
+      - "9001:9001"
+      
+  ikuai2-shenzhen:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-shenzhen
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=219.134.95.147
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9002
+    ports:
+      - "9002:9002"
+      
+  ikuai2-shanghai:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-shanghai
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=ikuai.jiuwan.com
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9003
+    ports:
+      - "9003:9003"
+      
+  ikuai2-nuanshan:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-nuanshan
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=202.106.9.134
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9004
+    ports:
+      - "9004:9004" 
+      
+  ikuai2-guangzhou:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-guangzhou
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=219.135.173.138
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9005
+    ports:
+      - "9005:9005" 
+   
+  ikuai2-nuanshan_vpn:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-nuanshan_vpn
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=111.203.187.183
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9006
+    ports:
+      - "9006:9006" 
+      
+  ikuai2-pingxiang:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-pingxiang
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=117.40.230.120
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9007
+    ports:
+      - "9007:9007" 
+      
+  ikuai2-guohui_33:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-guohui_33
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=222.247.21.238
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9008
+    ports:
+      - "9008:9008" 
+      
+  ikuai2-changsha:
+    build: .
+    image: ikuai_exporter
+    container_name: ikuai2-changsha
+    restart: always
+    environment:
+      - IK_USERNAME=jiankong
+      - IK_PASSWORD=Tuyou@bcty123
+      - IK_IPADDR=218.76.0.44
+      - IK_MGR_PORT=65432
+      - IK_USE_HTTPS= False
+      - APP_PORT=9009
+    ports:
+      - "9009:9009" 
